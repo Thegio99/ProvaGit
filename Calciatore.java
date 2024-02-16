@@ -4,10 +4,16 @@ public class Calciatore {
     private int numeroMaglia;
     private String ruolo;
 
+    //public Calciatore(){};
 
-    public Calciatore(String string, int i, String string2) {
+    public Calciatore(String nome, int numeroMaglia, String ruolo) {
         //TODO Auto-generated constructor stub
+        this.nome=nome;
+        this.numeroMaglia=numeroMaglia;
+        this.ruolo=ruolo;
     }
+
+
     public String getNome() {
         return nome;
     }
@@ -26,10 +32,9 @@ public class Calciatore {
     public void setRuolo(String ruolo) {
         this.ruolo = ruolo;
     }
-
+    
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return getNome()+" "+ getNumeroMaglia()+" "+ getRuolo();
+        return  getNome()+" "+ getNumeroMaglia()+" "+ getRuolo();
     }
 }
