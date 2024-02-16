@@ -15,6 +15,7 @@ public class  App{
             System.out.println(calciatore.toString());
         }
         
+        System.out.println("ERROR");
 
     }
 
