@@ -6,21 +6,27 @@ public class  App{
     static ArrayList<Calciatore> playerList= new ArrayList<>();
     public static void main(String[] args){
 
+        System.out.println("Inserire 0 per uscire");
+        System.out.println("Inserire 1 per aggoingere calciatore");
+        System.out.println("Inserire 2 per stampare lista calciatori");
         
-        
-
-        System.out.println("Inserire calciatore ?");
         String s = sc.nextLine();
-        
-        if(s.equalsIgnoreCase("si")){
-            insPlayer();
-        }
 
-        for (Calciatore calciatore : playerList) {
-            System.out.println(calciatore.toString());
+        while((!s.equals("0")) ){
+        switch (s) {
+            case "1":
+                insPlayer();
+                break;
+            case "2":
+                printPlayer();
+            default:
+                break;
         }
-        
+        System.out.println("Scegli nuovamente :");
+        s = sc.nextLine();
     }
+
+}
 
     public static void insPlayer(){
         System.out.println("Inserisci nome :");
@@ -37,4 +43,10 @@ public class  App{
 
     }
 
+    public static void printPlayer(){
+        for (Calciatore calciatore : playerList) {
+            System.out.println(calciatore.toString());
+        }
+    }
+    
 }
