@@ -7,6 +7,7 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.List;
 
+
 public class  App{
     static Scanner sc =new Scanner(System.in);
     
@@ -67,8 +68,9 @@ public class  App{
             
             BufferedWriter writer = new BufferedWriter(new FileWriter(path);
 
-            for (Calciatore iterable_element : milan.getCalciatori()) {
-                
+            for (Calciatore iterable_element : s.getCalciatori()) {
+                writer.write(iterable_element);
+                writer.newLine();
             }
 
         }
