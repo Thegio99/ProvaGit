@@ -1,3 +1,7 @@
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Collections;
@@ -36,6 +40,8 @@ public class  App{
             case "3":
                 milan.sortPlayer();
                 break;
+            case "4":
+                 addToFile();
             default:
                 break;
         }
@@ -45,6 +51,25 @@ public class  App{
         System.out.println("Inserire 3 per ordinare la lista ");
         s = sc.nextLine();
     }
-
 }
+
+        public static void addToFile(Squadra s) throws IOException{
+
+            String path ="C:\\Users\\gmercuri\\OneDrive - NTT DATA EMEAL\\Desktop\\Corsogit\\Rosa.txt";
+            File file = new File(path);
+
+            if (file.exists())
+                System.out.println("Il file " + path + " esiste");
+            else if (file.createNewFile())
+                System.out.println("Il file " + path + " è stato creato");
+            else
+                System.out.println("Il file " + path + " non può essere creato");
+            
+            BufferedWriter writer = new BufferedWriter(new FileWriter(path);
+
+            for (Calciatore iterable_element : milan.getCalciatori()) {
+                
+            }
+
+        }
 }

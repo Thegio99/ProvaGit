@@ -36,4 +36,8 @@ public class Squadra {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public ArrayList<Calciatore> getCalciatori() {
+        return calicatori;
+    }
 }
