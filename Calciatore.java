@@ -1,4 +1,6 @@
-public class Calciatore implements  Comparable<Calciatore>{
+import java.io.Serializable;
+
+public class Calciatore implements  Comparable<Calciatore>, Serializable{
 
     private String nome;
     private int numeroMaglia;
