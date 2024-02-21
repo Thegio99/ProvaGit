@@ -32,7 +32,7 @@ public class Calciatore implements  Comparable<Calciatore>{
     public void setRuolo(String ruolo) {
         this.ruolo = ruolo;
     }
-    
+        
     @Override
     public String toString() {
         return  getNome()+" "+ getNumeroMaglia()+" "+ getRuolo();
