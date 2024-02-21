@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Collections;
+import java.util.List;
 
 public class  App{
     static Scanner sc =new Scanner(System.in);
@@ -18,6 +20,7 @@ public class  App{
                 insPlayer();
                 break;
             case "2":
+                sortPlayer();
                 printPlayer();
             default:
                 break;
@@ -49,4 +52,7 @@ public class  App{
         }
     }
     
+    public static void sortPlayer(){
+        Collections.sort(playerList);
+    }
 }

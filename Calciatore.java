@@ -1,4 +1,4 @@
-public class Calciatore {
+public class Calciatore implements  Comparable<Calciatore>{
 
     private String nome;
     private int numeroMaglia;
@@ -6,7 +6,7 @@ public class Calciatore {
 
     //public Calciatore(){};
 
-    public Calciatore(String nome, int numeroMaglia, String ruolo) {
+    public Calciatore(String nome, int numeroMaglia, String ruolo)  {
         //TODO Auto-generated constructor stub
         this.nome=nome;
         this.numeroMaglia=numeroMaglia;
@@ -37,4 +37,11 @@ public class Calciatore {
     public String toString() {
         return  getNome()+" "+ getNumeroMaglia()+" "+ getRuolo();
     }
+
+
+    @Override
+    public int compareTo(Calciatore o) {
+        return this.getNome().compareTo(o.getNome());
+    }
+    
 }
