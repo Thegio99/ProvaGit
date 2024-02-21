@@ -42,7 +42,7 @@ public class  App{
                 milan.sortPlayer();
                 break;
             case "4":
-                 addToFile();
+                // addToFile();
             default:
                 break;
         }
@@ -69,8 +69,7 @@ public class  App{
             BufferedWriter writer = new BufferedWriter(new FileWriter(path);
 
             for (Calciatore iterable_element : s.getCalciatori()) {
-                writer.write(iterable_element);
-                writer.newLine();
+                
             }
 
         }
