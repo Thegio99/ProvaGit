@@ -31,15 +31,14 @@ public class  App{
         while((!s.equals("0")) ){
         switch (s) {
             case "1":
-                /*System.out.println("inserisci nome ");
+                System.out.println("inserisci nome ");
                 String nome =sc.nextLine();
                 System.out.println("inserisci numero di maglia");
                 int numeroMaglia = sc.nextInt();
                 sc.nextLine();
                 System.out.println("inserisci ruolo calciatore");
                 String ruolo = sc.nextLine();
-                Calciatore c = new Calciatore(nome, numeroMaglia, ruolo); */
-                Calciatore c = new Calciatore("leao", 10, "ATT");
+                Calciatore c = new Calciatore(nome, numeroMaglia, ruolo); 
                 milan.addPlayer(c);
                 break;
             case "2":
