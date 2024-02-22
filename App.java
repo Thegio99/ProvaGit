@@ -24,7 +24,7 @@ public class  App{
         System.out.println("Inserire 4 per salvare la rosa in un file");
         System.out.println("Inserire 5 per caricare la rosa in un file");
 
-        Squadra milan = new Squadra("Milan");
+        Squadra milan = new Squadra("A.C Milan");
         
         String s = sc.nextLine();
 
